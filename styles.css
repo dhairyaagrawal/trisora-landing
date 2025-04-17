@@ -1,9 +1,12 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 :root {
-  --primary: #0d1b2a;
-  --secondary: #1b263b;
-  --accent: #415a77;
-  --text-light: #e0e1dd;
-  --text-dark: #0d1b2a;
+  --primary: #000000;
+  --secondary: #121416;
+  --accent: #6F8FAF; /* Denim Blue */
+  --text-light: #f7f7f7;
+  --text-dark: #333333;
 }
 
 * {
@@ -13,21 +16,23 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--primary);
-  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+  background: var(--text-light);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
 header, nav, footer {
-  background: var(--secondary);
-  padding: 1rem 2rem;
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 1.5rem 2rem;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header img {
@@ -35,13 +40,14 @@ header img {
 }
 
 header h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: var(--secondary);
 }
 
 nav a {
@@ -52,6 +58,7 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: underline;
   color: var(--accent);
 }
 
@@ -61,31 +68,57 @@ nav a:hover {
   margin: auto;
 }
 
+.container section {
+  margin-bottom: 2rem;
+}
+
+.container p + p {
+  margin-top: 1rem;
+}
+
+.container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: var(--accent);
-  color: white;
+  background: #fff;
+  color: var(--text-dark);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #000;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--text-light);
+  color: #000;
 }
 
 .contact-info {
   line-height: 1.8;
+  color: #555;
 }
 
 footer {
+  background: var(--secondary);
   text-align: center;
   font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

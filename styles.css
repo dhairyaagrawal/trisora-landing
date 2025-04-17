@@ -1,118 +1,102 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">:root {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>--primary: #0d1b2a;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>--secondary: #1b263b;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>--accent: #415a77;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>--text-light: #e0e1dd;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>--text-dark: #0d1b2a;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">* {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: var(--primary);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-light);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.6;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header, nav, footer {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: var(--secondary);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 1rem 2rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: space-between;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header img {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>height: 40px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header h2 {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 1.5rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>flex-wrap: wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav a {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-light);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: 0.5rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-weight: bold;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: var(--accent);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.container {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>max-width: 1000px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin: auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding: 5rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>background: var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 1rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section-title {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color: var(--text-light);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.contact-info {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.8;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">}</p>
-</body>
-</html>
+:root {
+  --primary: #0d1b2a;
+  --secondary: #1b263b;
+  --accent: #415a77;
+  --text-light: #e0e1dd;
+  --text-dark: #0d1b2a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--primary);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+header, nav, footer {
+  background: var(--secondary);
+  padding: 1rem 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-light);
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--accent);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.contact-info {
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+  }
+}

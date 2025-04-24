@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --primary: #000000;
+  --primary: #052b6c93;
   --secondary: #121416;
   --accent: #6F8FAF; /* Denim Blue */
   --text-light: #f7f7f7;
@@ -45,7 +45,7 @@ header h2 {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   background-color: var(--secondary);
 }
